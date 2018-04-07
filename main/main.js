@@ -1,5 +1,5 @@
 // Write your cade below:
-function main(sysIn,userIn) {
+function guessNum(sysIn,userIn) {
 	let count = [0,0];
 	for (let i = 0; i < sysIn.length; i++) {
 		let temp = userIn.indexOf(sysIn.charAt(i));
@@ -13,6 +13,4 @@ function main(sysIn,userIn) {
 	return `${count[0]}A${count[1]}B`;
 };
 
-module.exports = {
-    main
-}
+module.exports = guessNum;
